@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayangkuu</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #afeeee;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #4682b4;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #87ceeb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e60073;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Selamat Ulang Tahun Sayangkuu</h1>
+    <p>Ciee udah umur 18 ajaa
+  
+    <br>
+    <button onclick="playSong()">PENCET 🎶</button>
+    
+    
+    <audio id="birthdaySong" src="audio_5c39439fbc(0).mp3"></audio>
+
+
+    <script>
+        function playSong() {
+            document.getElementById('birthdaySong').play();
+        }
+    </script>
+    
+  
+    <img src="giphy(0).gif" alt="Happy Birthday">
+    
+        <br>
+        <button onclick="nextPage()">Next ➡️</button>
+
+        
+        <script>
+        function nextPage() {
+            window.location.href = "page2.html"; // Menuju halaman kedua
+        }
+        
+    </script>
+        
+    
+
+</body>
+</html>

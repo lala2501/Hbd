@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Spesial!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #e6f7ff;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #007acc;
+        }
+        p {
+            font-size: 17px;
+            color: #333;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+    .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .popup button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .popup button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Buat bubub ❤️</h1>
+    <p>Selamat ulang tahun sayangg, ini pertama kalinya aku ngerayain ultah mu ya hehe. Kamu harus tau aku nervous bangett, bingung bangett, soalnya ini pertama kalinya aku ngerayain ulang tahun cowokk. Aku bingung mau ngado apaa huhu, semoga kamu suka yaa sama kado kuu. Aku doain kamu panjang umur dan sehat selaluu, pokonya harus, biar kita bisa bareng² selamanyaa sampe tua.</p>
+    <p>Aku bersyukur banget kamu lahir di dunia ini dan ketemu aku, makasi sayang udah hadir di hidupku, bisa mengenal kamu itu salah satu hal terbaik di hidupku, semoga aku selalu jadi tempatmu buat pulang, bisa selalu jadi rumah mu, yang selalu ada buat kamu, tempat menetap mu.</p>
+    <p>Makasii banget udah mau ngejalanin hubungan sama aku, makasii buat kamu yang ngga nyerah sama aku, makasii buat kamu yang sabar ngadepin aku. Ngga kerasa kita udah sejauh ini, ya walaupun belum lama² banget sii, tapi udah banyakk banget masalah² yang kita hadapin. Dan pasti kedepannya bakalan lebih banyak lagi. Tapi aku percaya kita bisa kalo kita ngelewatin itu bareng².</p>
+    <p>Aku berdoa semoga Allah memudahkan jalanmu dan melancarkan segala masalahmu, semoga Allah mengabulkan semua permintaan mu, aamiin. Satu hal yang pasti, jangan pernah nyerah ya sayangg, kalo kamu gagal kamu HARUS coba lagi, kalo kamu butuh bantuan, ada aku, aku bakal bantu kamu sebisa mungkin. Aku selalu ada buat kamu, ingett.</p>
+    <p>Satu lagi, semoga perasaan mu ke aku ngga pernah berubah, semoga kamu engga pernah berubah ke arah yang jelek, kamu harus tetep jadi Rasya pembaikk, Rasya yang ga aneh², Rasya yang sayang ibukk, Rasya yang sabarr, Rasya yang soft spoken wkwk, Rasya yang lucuu, Rasya yang sayang akuu, Rasya yang hebatt, Rasya kuu.</p>
+    <p>Rasanya seneng banget bisa jatuh cinta ke lelaki sebaik kamu</p>
+    <p>Aku bangga sama kamu, makasih udah mau bertahan sejauh ini, aku berdoa biar kamu bahagia selalu, aku sukaa kalo liat kamu senyum, aku suka kalo liat kamu ketawa, kamu harus tau kalo senyumu itu manis, aku suka.</p>
+    <p>Sekali lagi, selamat ulang tahun sayangg, love youu</p>
+    
+    <img src="Picsart_25-02-28_19-53-58-244.jpg" alt="Love Image">
+    
+    <br>
+    <button onclick="backPage()">⬅️ Kembali</button>
+
+    <div id="popup" class="popup">
+        <h2>🎉 DORR 🎉</h2>
+        <p>SAYANG BUBUBB ❤️ Gimanaa bagus ndaa</p>
+        <button onclick="closePopup()">YEAHH</button>
+    </div>
+    
+    <script>
+        function backPage() {
+            window.location.href = "happy_birthday.html"; // Kembali ke halaman pertama
+        }
+    function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        window.addEventListener("scroll", function() {
+            let scrollHeight = document.documentElement.scrollHeight;
+            let scrollPosition = window.innerHeight + window.scrollY;
+            if (scrollPosition >= scrollHeight - 10) {
+                document.getElementById("popup").style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+</html>
